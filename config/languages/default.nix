@@ -1,5 +1,6 @@
 {
   imports = [
+    ./lua
     ./nix
   ];
 }
