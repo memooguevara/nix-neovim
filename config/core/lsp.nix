@@ -1,8 +1,6 @@
 {
   plugins.lsp = {
     enable = true;
-    servers.nixd.enable = true;
-
     keymaps.lspBuf = {
       K = "hover";
       gD = "references";
@@ -10,5 +8,10 @@
       gi = "implementation";
       gt = "type_definition";
     };
+    onAttach = ''
+      vim.keymap.set('n', '<leader>vf', function()
+        vim.lsp.buf.format({async = true})
+      end)
+    '';
   };
 }

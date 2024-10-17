@@ -1,6 +1,7 @@
 {
-  imports = [ 
+  imports = [
     ./core
+    ./languages
     ./tools
   ];
 }
