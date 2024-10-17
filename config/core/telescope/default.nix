@@ -25,29 +25,25 @@
       fzf-native.enable = true;
     };
     keymaps = {
+      "<leader>ff" = {
+        action = "find_files";
+        options.desc = "Telescope Find Files";
+      };
       "<leader>fg" = {
         action = "live_grep";
-        options = {
-          desc = "Telescope Live Grep";
-        };
+        options.desc = "Telescope Live Grep";
       };
-      "<leader>ph" = {
+      "<leader>fh" = {
         action = "help_tags";
-        options = {
-          desc = "Telescope Help";
-        };
+        options.desc = "Telescope Help";
       };
-      "<leader>pe" = {
+      "<leader>fb" = {
         action = "buffers";
-        options = {
-          desc = "Telescope Buffers";
-        };
+        options.desc = "Telescope Buffers";
       };
       "<leader>pr" = {
         action = "treesitter";
-        options = {
-          desc = "Telescope Treesitter";
-        };
+        options.desc = "Telescope Treesitter";
       };
     };
   };
@@ -70,7 +66,7 @@
     {
       mode = "n";
       key = "<leader>pd";
-      options.desc = "Telescope Document symbol";
+      options.desc = "Telescope Document Symbol";
       action = helpers.mkRaw ''
         function()
           require('telescope.builtin').lsp_document_symbols()
@@ -80,7 +76,7 @@
     {
       mode = "n";
       key = "<leader>pw";
-      options.desc = "Grep current word";
+      options.desc = "Grep Current Word";
       action = helpers.mkRaw ''
         function()
           require('telescope.builtin').grep_string { search = vim.fn.expand '<cword>' }
@@ -90,7 +86,7 @@
     {
       mode = "n";
       key = "<leader>ps";
-      options.desc = "Grep in project";
+      options.desc = "Grep in Project";
       action = helpers.mkRaw ''
         function()
           vim.ui.input({ prompt = "Grep for > " }, function(input)
