@@ -1,6 +1,6 @@
 {
   imports = [
-    ./lua
-    ./nix
+    ./lua.nix
+    ./nix.nix
   ];
 }
