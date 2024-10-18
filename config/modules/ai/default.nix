@@ -1,5 +1,5 @@
 {
   imports = [
-    ./copilot.nix
+    ./copilot
   ];
 }

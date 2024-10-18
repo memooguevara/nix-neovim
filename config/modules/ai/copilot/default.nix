@@ -1,4 +1,6 @@
 {
+  imports = [ ./chat.nix ];
+
   plugins = {
     copilot-cmp.enable = true;
     copilot-lua = {
