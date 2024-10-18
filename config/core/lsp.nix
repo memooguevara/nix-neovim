@@ -1,6 +1,7 @@
 {
   plugins.lsp = {
     enable = true;
+    inlayHints = true;
     keymaps = {
       diagnostic = {
         "<leader>j" = "goto_next";
@@ -27,8 +28,4 @@
       vim.keymap.set({'v', 'n'}, '<leader>vca', vim.lsp.buf.code_action)
     '';
   };
-
-  extraConfigLua = ''
-    vim.lsp.inlay_hint.enable()
-  '';
 }
