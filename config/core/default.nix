@@ -9,4 +9,6 @@
 
   colorschemes.tokyonight.enable = true;
   clipboard.register = "unnamedplus";
+
+  plugins.web-devicons.enable= true;
 }
