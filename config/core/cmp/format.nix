@@ -44,14 +44,14 @@
             }
 
             vim_item.menu = ({
-              buffer = "📄",
-              nvim_lsp = "🔍",
-              luasnip = "🌩️",
+              buffer = "",
+              nvim_lsp = "",
+              luasnip = "",
               nvim_lua = "",
-              ["vim-dadbod-completion"] = "💾",
-              cmdline = "💻",
-              path = "🐧",
-              copilot = "🤖",
+              ["vim-dadbod-completion"] = "",
+              cmdline = "",
+              path = "",
+              copilot = "",
             })[entry.source.name]
 
             vim_item.menu_hl_group = ({
