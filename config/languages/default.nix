@@ -5,4 +5,6 @@
     ./lua.nix
     ./nix.nix
   ];
+
+  plugins.none-ls.enable = true;
 }

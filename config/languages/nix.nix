@@ -9,12 +9,9 @@
       settings.formating.command = [ "nixfmt" ];
     };
 
-    none-ls = {
-      enable = true;
-      sources = {
-        diagnostics.statix.enable = true;
-        code_actions.statix.enable = true;
-      };
+    none-ls.sources = {
+      diagnostics.statix.enable = true;
+      code_actions.statix.enable = true;
     };
   };
 
