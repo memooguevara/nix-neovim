@@ -1,5 +1,6 @@
 {
   imports = [
+    ./cmp
     ./options.nix
     ./keymaps.nix
     ./lsp.nix
