@@ -1,9 +1,5 @@
-{ helpers, ... }:
-
 {
   plugins = {
-    lsp-format.enable = true;
-
     lsp = {
       enable = true;
       inlayHints = true;
@@ -44,18 +40,6 @@
             desc = "Go to previous diagnostic";
           };
         };
-        extra = [
-          {
-            mode = [ "n" ];
-            key = "<leader>vf";
-            action = helpers.mkRaw ''
-              function()
-                vim.lsp.buf.format({ async = true })
-              end
-            '';
-            options.desc = "Format code";
-          }
-        ];
       };
 
       onAttach = ''

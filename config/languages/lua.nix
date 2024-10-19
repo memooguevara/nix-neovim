@@ -1,7 +1,5 @@
-{ pkgs, ... }:
-
-{
-  extraPlugins = with pkgs.vimPlugins; [ lazydev-nvim ];
+{pkgs, ...}: {
+  extraPlugins = with pkgs.vimPlugins; [lazydev-nvim];
 
   extraConfigLuaPre = ''
     require('lazydev').setup({})
@@ -13,7 +11,6 @@
       formatting.stylua.enable = true;
       diagnostics.selene.enable = true;
     };
-
     cmp.settings.sources = [
       {
         name = "lazydev";

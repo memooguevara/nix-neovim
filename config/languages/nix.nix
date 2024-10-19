@@ -1,15 +1,12 @@
-{ pkgs, ... }:
-
 {
-  extraPackages = [ pkgs.nixfmt-rfc-style ];
   plugins = {
     nix.enable = true;
-    lsp.servers.nixd = {
+    lsp.servers.nil_ls = {
       enable = true;
-      settings.formating.command = [ "nixfmt" ];
+      settings.formatting.command = ["alejandra"];
     };
-
     none-ls.sources = {
+      formatting.alejandra.enable = true;
       diagnostics.statix.enable = true;
       code_actions.statix.enable = true;
     };
