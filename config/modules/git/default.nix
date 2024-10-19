@@ -1,6 +1,5 @@
 {
   imports = [
-    ./ai
-    ./git
+    ./lazygit.nix
   ];
 }
