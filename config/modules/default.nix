@@ -2,5 +2,6 @@
   imports = [
     ./ai
     ./git
+    ./ui
   ];
 }
