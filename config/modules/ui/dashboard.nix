@@ -11,7 +11,7 @@
             group = "Label";
             icon = "󰱽 ";
             icon_hl = "@variable";
-            key = "f";
+            key = "ff";
           }
           {
             action = "Telescope live_grep";
@@ -19,7 +19,7 @@
             group = "Label";
             icon = "󱎸 ";
             icon_hl = "@variable";
-            key = "g";
+            key = "fg";
           }
           {
             action = "Telescope oldfiles";
@@ -27,7 +27,7 @@
             group = "Label";
             icon = "󱋢 ";
             icon_hl = "@variable";
-            key = "r";
+            key = "fr";
           }
           {
             action = "LazyGit";
@@ -35,7 +35,7 @@
             group = "Label";
             icon = " ";
             icon_hl = "@variable";
-            key = "l";
+            key = "gg";
           }
           {
             action = "quit";

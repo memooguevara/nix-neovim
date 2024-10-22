@@ -1,7 +1,9 @@
-{ pkgs, helpers, ... }:
-
 {
-  imports = [ ./ui.nix ];
+  pkgs,
+  helpers,
+  ...
+}: {
+  imports = [./ui.nix];
 
   extraPackages = [
     pkgs.fd
@@ -31,6 +33,10 @@
       "<leader>fg" = {
         action = "live_grep";
         options.desc = "Telescope Live Grep";
+      };
+      "<leader>fr" = {
+        action = "oldfiles";
+        options.desc = "Telescope Recent Files";
       };
       "<leader>fh" = {
         action = "help_tags";
