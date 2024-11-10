@@ -5,5 +5,6 @@
     ./css-html.nix
     ./lua.nix
     ./nix.nix
+    ./ts.nix
   ];
 }
