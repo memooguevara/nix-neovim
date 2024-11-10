@@ -1,7 +1,5 @@
-{ helpers, ... }:
-
 {
-  imports = [ ./format.nix ];
+  imports = [./format.nix];
   plugins = {
     cmp-buffer.enable = true;
     cmp-emoji.enable = true;
@@ -15,33 +13,33 @@
       settings = {
         snippet.expand = "luasnip";
         mapping = {
-          "<c-y>" = "cmp.mapping.confirm({ select = true, behavior = cmp.ConfirmBehavior.Insert })";
-          "<c-d>" = "cmp.mapping.scroll_docs(-4)";
-          "<c-f>" = "cmp.mapping.scroll_docs(4)";
-          "<c-space>" = "cmp.mapping.complete()";
-          "<c-e>" = "cmp.mapping.abort()";
-          "<c-n>" = "cmp.mapping.select_next_item()";
-          "<c-p>" = "cmp.mapping.select_prev_item()";
+          "<C-y>" = "cmp.mapping.confirm({ select = true, behavior = cmp.ConfirmBehavior.Insert })";
+          "<C-d>" = "cmp.mapping.scroll_docs(-4)";
+          "<C-f>" = "cmp.mapping.scroll_docs(4)";
+          "<C-Space>" = "cmp.mapping.complete()";
+          "<C-e>" = "cmp.mapping.abort()";
+          "<C-n>" = "cmp.mapping.select_next_item()";
+          "<C-p>" = "cmp.mapping.select_prev_item()";
         };
         sources = [
-          { name = "nvim_lsp"; }
-          { name = "path"; }
-          { name = "buffer"; }
-          { name = "luasnip"; }
-          { name = "emoji"; }
+          {name = "nvim_lsp";}
+          {name = "path";}
+          {name = "buffer";}
+          {name = "luasnip";}
+          {name = "emoji";}
         ];
       };
       filetype = {
         gitcommit = {
           sources = [
-            { name = "cmp_git"; }
-            { name = "buffer"; }
+            {name = "cmp_git";}
+            {name = "buffer";}
           ];
         };
         sql = {
           sources = [
-            { name = "vim-dadbod-completion"; }
-            { name = "buffer"; }
+            {name = "vim-dadbod-completion";}
+            {name = "buffer";}
           ];
         };
       };
@@ -50,21 +48,21 @@
           mapping = {
             __raw = "cmp.mapping.preset.cmdline()";
           };
-          sources = [ { name = "buffer"; } ];
+          sources = [{name = "buffer";}];
         };
         "?" = {
           mapping = {
             __raw = "cmp.mapping.preset.cmdline()";
           };
-          sources = [ { name = "buffer"; } ];
+          sources = [{name = "buffer";}];
         };
         ":" = {
           mapping = {
             __raw = "cmp.mapping.preset.cmdline()";
           };
           sources = [
-            { name = "path"; }
-            { name = "cmdline"; }
+            {name = "path";}
+            {name = "cmdline";}
           ];
         };
       };
