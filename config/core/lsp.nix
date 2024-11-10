@@ -13,6 +13,10 @@
             action = "references";
             desc = "Go to references";
           };
+          gD = {
+            action = "declaration";
+            desc = "Go to declaration";
+          };
           gd = {
             action = "definition";
             desc = "Go to definition";
@@ -25,7 +29,11 @@
             action = "type_definition";
             desc = "Go to type definition";
           };
-          "<leader>r" = {
+          "<leader>ca" = {
+            action = "code_action";
+            desc = "Show code actions";
+          };
+          "<leader>cr" = {
             action = "rename";
             desc = "Rename variable";
           };
@@ -41,14 +49,6 @@
           };
         };
       };
-
-      onAttach = ''
-        -- vim.keymap.set('i', '<c-t>', function()
-        --   vim.lsp.buf.signature_help()
-        -- end)
-
-        -- vim.keymap.set({'v', 'n'}, '<leader>vca', vim.lsp.buf.code_action)
-      '';
     };
   };
 }
