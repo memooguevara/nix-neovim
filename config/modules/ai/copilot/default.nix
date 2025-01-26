@@ -1,12 +1,14 @@
 {
-  imports = [ ./chat.nix ];
+  imports = [./chat.nix];
 
   plugins = {
     copilot-cmp.enable = true;
     copilot-lua = {
       enable = true;
-      panel.enabled = false;
-      suggestion.enabled = false;
+      settings = {
+        panel.enabled = false;
+        suggestion.enabled = false;
+      };
     };
     cmp.settings.sources = [
       {

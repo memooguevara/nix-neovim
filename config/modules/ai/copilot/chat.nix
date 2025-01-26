@@ -1,6 +1,4 @@
-{ helpers, ... }:
-
-{
+{helpers, ...}: {
   plugins = {
     copilot-chat = {
       enable = true;
