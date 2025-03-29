@@ -4,7 +4,8 @@
   plugins = {
     copilot-cmp.enable = true;
     copilot-lua = {
-      enable = true;
+      # FIX: Current version of copilot-language-server is not downloaded...
+      enable = false;
       settings = {
         panel.enabled = false;
         suggestion.enabled = false;
