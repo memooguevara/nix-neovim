@@ -30,11 +30,11 @@
         action = "find_files";
         options.desc = "Telescope Find Files";
       };
-      "<leader>fg" = {
+      "<leader>fw" = {
         action = "live_grep";
         options.desc = "Telescope Live Grep";
       };
-      "<leader>fr" = {
+      "<leader>fo" = {
         action = "oldfiles";
         options.desc = "Telescope Recent Files";
       };
