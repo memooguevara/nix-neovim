@@ -8,5 +8,6 @@
     ./lua.nix
     ./nix.nix
     ./ts.nix
+    ./astro.nix
   ];
 }
